@@ -1,0 +1,170 @@
+/* Importando a fonte Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Estilizando todos os elementos */
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    box-sizing: border-box; /* Garantir que padding e border sejam incluídos no tamanho total dos elementos */
+}
+
+body {
+    background-color: #F3F5FC;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.Digite {
+    display: flex; /* Alterado para flex em vez de inline-flex */
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 50%;
+}
+
+.texto, .texto_codificado {
+    resize: none;
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.texto::placeholder {
+    color: #0A3871;
+}
+
+.texto {
+    background: #F3F5FC;
+    border: none;
+    width: 80%;
+    height: 70vh;
+}
+
+#aviso {
+    display: flex;
+    gap: 3px;
+    justify-content: flex-start;
+    color: black;
+}
+
+.botoes {
+    display: flex; /* Usar flex para alinhar os botões horizontalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+    gap: 10px; /* Ajuste o espaço entre os botões */
+    margin-bottom: 8vh;
+    width: 100%; /* Garantir que o contêiner ocupe a largura total disponível */
+}
+
+.botoes_tamanho {
+    width: 328px;
+    height: 67px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    background: #0A3871;
+    border: 3px solid black; 
+    transition: 0.5s;
+}
+
+.botoes_tamanho:hover {
+    font-size: 25px;
+    border: 2px solid black;
+}
+
+.botoes_tamanho_dec {
+    width: 328px;
+    height: 67px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 24px;
+    color: #0A3871;
+    font-weight: bold;
+    background: transparent;
+    border: 3px solid black; 
+    transition: 0.5s;
+}
+
+.botoes_tamanho_dec:hover {
+    font-size: 25px;
+    border: 2px solid black;
+}
+
+.codificador {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    gap: 40px;
+}
+
+.texto_codificado_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.titulo_codificado {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+.texto_codificado {
+    background: #ffffff;
+    border-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 100px; /* Ajusta o espaçamento interno do textarea */
+    text-align: center; /* Centraliza o texto */
+    font-size: 16px; /* Ajusta o tamanho do texto */
+    color: #000000;
+    position: relative; /* Necessário para posicionar o pseudo-elemento ::before */
+}
+
+.texto_codificado::placeholder {
+    color: #000000;
+    text-align: center; /* Centraliza o texto do placeholder */
+}
+
+#copiar {
+    position: relative;
+    bottom: 5vh;
+}
+
+.logo_alura {
+    width: 80px; /* Ajuste o tamanho da largura da imagem */
+    height: 80px; /* Ajuste o tamanho da altura da imagem */
+    object-fit: contain; /* Mantém a proporção da imagem */
+}
+
+footer {
+    background-color: #0A3871; /* Cor de fundo do rodapé */
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Centralizar o texto */
+    padding: 10px; /* Espaçamento interno */
+    font-family: 'Inter', sans-serif; /* Fonte para o rodapé */
+    font-size: 15px; /* Tamanho da fonte do rodapé */
+    font-weight: 400; /* Peso da fonte */
+}

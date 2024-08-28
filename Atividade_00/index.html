@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img class="logo_alura" src="logo_alura.png" alt="Logo da Alura">
+    </header>
+
+    <main>
+        <div class="Digite">
+            <textarea id="input" placeholder="Digite aqui seu texto..." class="texto"></textarea>
+            <p id="aviso">
+                <img src="exclamacao.png" alt="Aviso">
+            </p>
+            <div class="botoes">
+                <button id="codificador" class="botoes_tamanho">Codificar</button>
+                <button id="decodificador" class="botoes_tamanho">Decodificar</button>
+            </div>
+        </div>
+
+        <div class="codificador">
+            <div class="texto_codificado_container">
+                <textarea wrap="hard" id="output" readonly placeholder="Texto criptografado ou descriptografado será exibido aqui. Nenhuma mensagem encontrada." class="texto_codificado"></textarea>
+            </div>
+            <button id="copiar" class="botoes_tamanho">Copiar</button>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Informações de rodapé podem ser adicionadas aqui -->
+        <p>Desenvolvido por Thiago Calixto da Silva</p>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
